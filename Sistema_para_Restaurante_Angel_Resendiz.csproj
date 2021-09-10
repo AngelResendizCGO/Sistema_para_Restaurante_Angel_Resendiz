@@ -79,22 +79,22 @@
     <Compile Include="Modulos\Mesas_Salones\Salones.Designer.cs">
       <DependentUpon>Salones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos\Grupos_de_Productos.cs">
+    <Compile Include="Modulos\Productos\Grupos_de_Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos\Grupos_de_Productos.Designer.cs">
+    <Compile Include="Modulos\Productos\Grupos_de_Productos.Designer.cs">
       <DependentUpon>Grupos_de_Productos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos\Productos_rest.cs">
+    <Compile Include="Modulos\Productos\Productos_rest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos\Productos_rest.Designer.cs">
+    <Compile Include="Modulos\Productos\Productos_rest.Designer.cs">
       <DependentUpon>Productos_rest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos\Registro_Productos.cs">
+    <Compile Include="Modulos\Productos\Registro_Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos\Registro_Productos.Designer.cs">
+    <Compile Include="Modulos\Productos\Registro_Productos.Designer.cs">
       <DependentUpon>Registro_Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -111,7 +111,7 @@
     <EmbeddedResource Include="Modulos\Mesas_Salones\Salones.resx">
       <DependentUpon>Salones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos\Productos_rest.resx">
+    <EmbeddedResource Include="Modulos\Productos\Productos_rest.resx">
       <DependentUpon>Productos_rest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
