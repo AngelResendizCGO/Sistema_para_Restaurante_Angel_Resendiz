@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -22,7 +18,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Conexion
         }
         public static void cerrar()
         {
-            if(conectar.State == ConnectionState.Open)
+            if (conectar.State == ConnectionState.Open)
             {
                 conectar.Close();
             }

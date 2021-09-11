@@ -111,6 +111,9 @@
     <EmbeddedResource Include="Modulos\Mesas_Salones\Salones.resx">
       <DependentUpon>Salones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Productos\Grupos_de_Productos.resx">
+      <DependentUpon>Grupos_de_Productos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Productos\Productos_rest.resx">
       <DependentUpon>Productos_rest.cs</DependentUpon>
     </EmbeddedResource>
