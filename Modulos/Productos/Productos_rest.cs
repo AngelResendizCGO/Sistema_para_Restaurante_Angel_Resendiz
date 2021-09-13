@@ -164,7 +164,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
                     PictureBox i1 = new PictureBox();
 
                     b.Text = rdr["Descripcion"].ToString();
-                    b.Name = rdr["Id_Producto1"].ToString();
+                    b.Name = rdr["Id_Prducto"].ToString();
                     b.Size = new System.Drawing.Size(119, 25);
                     b.Font = new System.Drawing.Font("Microsoft Sans Serif", 13);
                     b.BackColor = Color.Transparent;
@@ -198,7 +198,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
                     mstrip.AutoSize = false;
                     mstrip.Size = new System.Drawing.Size(28, 24);
                     mstrip.Dock = DockStyle.Right;
-                    mstrip.Name = rdr["Id_Producto1"].ToString();
+                    mstrip.Name = rdr["Id_Prducto"].ToString();
 
                     ToolStripMenuItem tstripPrincipal = new ToolStripMenuItem();
                     ToolStripMenuItem tstripEditar = new ToolStripMenuItem();
@@ -210,23 +210,26 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
 
                     tstripEditar.Text = "Editar";
                     tstripEditar.Name = rdr["Descripcion"].ToString();
-                    tstripEditar.Tag = rdr["Id_Producto1"].ToString();
+                    tstripEditar.Tag = rdr["Id_Prducto"].ToString();
 
                     tstripEliminar.Text = "Eliminar";
-                    tstripEliminar.Tag = rdr["Id_Producto1"].ToString();
+                    tstripEliminar.Tag = rdr["Id_Prducto"].ToString();
 
                     tstripRestaurar.Text = "Restaurar";
-                    tstripRestaurar.Tag = rdr["Id_Producto1"].ToString();
+                    tstripRestaurar.Tag = rdr["Id_Prducto"].ToString();
 
                     p2.Controls.Add(mstrip);
 
-                    if (rdr["Estado_Imagen"].ToString() != "ACTIVO")
+                    mstrip.Items.Add(tstripPrincipal);
+                    tstripPrincipal.DropDownItems.Add(tstripEditar);
+                    tstripPrincipal.DropDownItems.Add(tstripEliminar);
+                    tstripPrincipal.DropDownItems.Add(tstripRestaurar);
+                    p2.Controls.Add(mstrip);
+                    p1.Controls.Add(b);
+
+                    if (rdr["Estado_Imagen"].ToString() != "VACIO")
                     {
                         p1.Controls.Add(i1);
-                    }
-                    else
-                    {
-                        p1.Controls.Add(b);
                     }
 
                     p1.Controls.Add(p2);
@@ -256,6 +259,19 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
         public void frmGrupos_FormClosed(Object sender, FormClosedEventArgs e)
         {
             dibujarGrupos();
+        }
+
+
+        public void frmRegistroProducto_FormClose(Object sender, FormClosedEventArgs e)
+        {
+            dibujarGrupos();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Productos.Registro_Productos frm = new Productos.Registro_Productos();
+            frm.FormClosed += new FormClosedEventHandler(frmRegistroProducto_FormClose);
+            frm.ShowDialog();
         }
 
     }
