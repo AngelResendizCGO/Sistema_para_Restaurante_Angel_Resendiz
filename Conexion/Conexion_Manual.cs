@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Xml;
-using System.Data.SqlClient;
 
 namespace Sistema_para_Restaurante_Angel_Resendiz.Conexion
 {
@@ -44,7 +37,8 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Conexion
                 XmlElement root = doc.DocumentElement;
                 dbcnString = root.Attributes[0].Value;
                 txtCnString.Text = (aes.Decrypt(dbcnString, Librerias.Desencryptacion.appPwdUnique, int.Parse("256")));
-            }catch(System.Security.Cryptography.CryptographicException ex)
+            }
+            catch (System.Security.Cryptography.CryptographicException ex)
             {
 
             }

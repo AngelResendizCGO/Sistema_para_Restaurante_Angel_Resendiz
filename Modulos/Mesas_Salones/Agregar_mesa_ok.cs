@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace Sistema_para_Restaurante_Angel_Resendiz.Modulos.Mesas_Salones
 {
@@ -26,7 +20,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Modulos.Mesas_Salones
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtMesaEdicion.Text != "")
+            if (txtMesaEdicion.Text != "")
             {
                 editar_mesa();
             }

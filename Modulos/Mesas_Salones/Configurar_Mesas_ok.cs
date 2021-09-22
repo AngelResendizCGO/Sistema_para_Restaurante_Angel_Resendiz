@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Sistema_para_Restaurante_Angel_Resendiz.Modulos.Mesas_Salones
 {
@@ -216,7 +211,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Modulos.Mesas_Salones
             frm.FormClosed += new FormClosedEventHandler(frm_formClosed);
             frm.ShowDialog();
         }
-        
+
         public void frm_formClosed(Object sender, FormClosedEventArgs e)
         {
             dibuja_salones();

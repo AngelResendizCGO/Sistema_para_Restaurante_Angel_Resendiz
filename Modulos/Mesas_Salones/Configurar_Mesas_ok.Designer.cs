@@ -280,7 +280,7 @@
             // PanelMesas
             // 
             this.PanelMesas.BackColor = System.Drawing.Color.Black;
-            this.PanelMesas.Location = new System.Drawing.Point(343, 162);
+            this.PanelMesas.Location = new System.Drawing.Point(324, 155);
             this.PanelMesas.Name = "PanelMesas";
             this.PanelMesas.Size = new System.Drawing.Size(255, 171);
             this.PanelMesas.TabIndex = 2;
@@ -325,7 +325,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel PanelBienvenida;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel PanelMesas;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button2;
@@ -336,5 +335,6 @@
         private System.Windows.Forms.Button btnTamLetraMenos;
         private System.Windows.Forms.Button btnTamLetraMas;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.FlowLayoutPanel PanelMesas;
     }
 }

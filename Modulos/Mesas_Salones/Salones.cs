@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace Sistema_para_Restaurante_Angel_Resendiz.Modulos.Mesas_Salones
 {
@@ -54,7 +48,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Modulos.Mesas_Salones
 
         private void mostrar_id_salon_recien_ingresado()
         {
-            SqlCommand com= new SqlCommand("mostrar_id_salon_recien_ingresado", Conexion.CONEXIONMAESTRA.conectar);
+            SqlCommand com = new SqlCommand("mostrar_id_salon_recien_ingresado", Conexion.CONEXIONMAESTRA.conectar);
             com.CommandType = CommandType.StoredProcedure;
             com.Parameters.AddWithValue("@Salon", txtSalonEdicion.Text);
             try
@@ -82,10 +76,10 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Modulos.Mesas_Salones
                 Conexion.CONEXIONMAESTRA.cerrar();
                 mostrar_id_salon_recien_ingresado();
                 insertar_mesas_vacias();
-                
+
                 Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Conexion.CONEXIONMAESTRA.cerrar();
                 MessageBox.Show(ex.Message);
@@ -94,7 +88,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Modulos.Mesas_Salones
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
             for (int i = 0; i < 80; i++)
             {
                 try
@@ -102,7 +96,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Modulos.Mesas_Salones
                     Conexion.CONEXIONMAESTRA.abrir();
                     SqlCommand cmd = new SqlCommand("insertar_salon", Conexion.CONEXIONMAESTRA.conectar);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Salon", "NULLO"+i);
+                    cmd.Parameters.AddWithValue("@Salon", "NULLO" + i);
                     cmd.Parameters.AddWithValue("@Id_salon", idSalon);
                     cmd.ExecuteNonQuery();
                     Conexion.CONEXIONMAESTRA.cerrar();
