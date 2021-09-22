@@ -130,12 +130,14 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
         {
             id_grupo = Convert.ToInt32(((Label)sender).Name);
             ver_productos_por_grupo();
+            Seleccionar_Deseleccionar_Grupos();
         }
 
         private void MiEventoImagen(System.Object sender, EventArgs e)
         {
             id_grupo = Convert.ToInt32(((PictureBox)sender).Tag);
             ver_productos_por_grupo();
+            Seleccionar_Deseleccionar_Grupos();
         }
 
         private void ver_productos_por_grupo()
@@ -254,6 +256,37 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
             Productos.Grupos_de_Productos frm = new Productos.Grupos_de_Productos();
             frm.FormClosed += new FormClosedEventHandler(frmGrupos_FormClosed);
             frm.ShowDialog();
+        }
+
+        private void Seleccionar_Deseleccionar_Grupos()
+        {
+            foreach (Panel panelp1 in Panel_Grupos.Controls)
+            {
+                if (panelp1 is Panel)
+                {
+                    foreach (Label PanelLateral2 in panelp1.Controls)
+                    {
+                        if (PanelLateral2 is Label)
+                        {
+                            panelp1.BackColor = Color.FromArgb(43, 43, 43);
+                            break;
+                        }
+                    }
+                }
+            }
+
+            foreach (Panel panelp2 in Panel_Grupos.Controls)
+            {
+                if (panelp2 is Panel)
+                {
+                    if (panelp2.Name == Convert.ToString(id_grupo))
+                    {
+                        panelp2.BackColor = Color.Black;
+                        break;
+                    }
+                }
+            }
+
         }
 
         public void frmGrupos_FormClosed(Object sender, FormClosedEventArgs e)
