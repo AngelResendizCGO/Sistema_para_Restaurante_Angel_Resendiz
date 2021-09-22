@@ -1,11 +1,8 @@
 ﻿using System.Windows.Forms;
-<<<<<<< HEAD
 using System.Data.SqlClient;
 using System.Data;
 using System;
 using System.Drawing;
-=======
->>>>>>> 627d54bc6221b37de68b04801e7d52aac2c0e7fb
 
 namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
 {
