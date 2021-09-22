@@ -297,7 +297,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
 
         public void frmRegistroProducto_FormClose(Object sender, FormClosedEventArgs e)
         {
-            dibujarGrupos();
+            dibujarProductos();
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
