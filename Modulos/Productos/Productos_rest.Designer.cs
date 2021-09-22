@@ -38,7 +38,6 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtBuscarSalon = new System.Windows.Forms.TextBox();
             this.AgregarGrupo = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.PanelBienvenida = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Panel7 = new System.Windows.Forms.Panel();
@@ -50,33 +49,17 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
             this.TextBox1 = new System.Windows.Forms.TextBox();
             this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-=======
-            this.PanelProductos = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.BtnAgregarProducto = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PanelBienvenida = new System.Windows.Forms.Panel();
->>>>>>> 627d54bc6221b37de68b04801e7d52aac2c0e7fb
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-<<<<<<< HEAD
             this.PanelBienvenida.SuspendLayout();
             this.Panel7.SuspendLayout();
             this.Panel9.SuspendLayout();
             this.Panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
             this.MenuStrip1.SuspendLayout();
-=======
-            this.PanelProductos.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.PanelBienvenida.SuspendLayout();
->>>>>>> 627d54bc6221b37de68b04801e7d52aac2c0e7fb
             this.SuspendLayout();
             // 
             // panel1
@@ -162,7 +145,6 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
             this.AgregarGrupo.UseVisualStyleBackColor = false;
             this.AgregarGrupo.Click += new System.EventHandler(this.AgregarGrupo_Click);
             // 
-<<<<<<< HEAD
             // PanelBienvenida
             // 
             this.PanelBienvenida.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -171,61 +153,6 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
             this.PanelBienvenida.Name = "PanelBienvenida";
             this.PanelBienvenida.Size = new System.Drawing.Size(468, 337);
             this.PanelBienvenida.TabIndex = 4;
-=======
-            // PanelProductos
-            // 
-            this.PanelProductos.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PanelProductos.Controls.Add(this.panel6);
-            this.PanelProductos.Controls.Add(this.BtnAgregarProducto);
-            this.PanelProductos.Location = new System.Drawing.Point(354, 12);
-            this.PanelProductos.Name = "PanelProductos";
-            this.PanelProductos.Size = new System.Drawing.Size(551, 377);
-            this.PanelProductos.TabIndex = 2;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Controls.Add(this.pictureBox2);
-            this.panel6.Controls.Add(this.textBox1);
-            this.panel6.Location = new System.Drawing.Point(215, 21);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(289, 55);
-            this.panel6.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(251, 19);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 16);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(13, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 19);
-            this.textBox1.TabIndex = 0;
-            // 
-            // BtnAgregarProducto
-            // 
-            this.BtnAgregarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnAgregarProducto.FlatAppearance.BorderSize = 0;
-            this.BtnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.BtnAgregarProducto.Location = new System.Drawing.Point(18, 21);
-            this.BtnAgregarProducto.Name = "BtnAgregarProducto";
-            this.BtnAgregarProducto.Size = new System.Drawing.Size(176, 37);
-            this.BtnAgregarProducto.TabIndex = 2;
-            this.BtnAgregarProducto.Text = "+ Agregar Producto";
-            this.BtnAgregarProducto.UseVisualStyleBackColor = false;
->>>>>>> 627d54bc6221b37de68b04801e7d52aac2c0e7fb
             // 
             // label1
             // 
@@ -233,7 +160,6 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(36, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(401, 126);
@@ -336,37 +262,15 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
             this.toolStripMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.toolStripMenuItem3.ToolTipText = "+ Agregar Grupo";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
-=======
-            this.label1.Location = new System.Drawing.Point(-223, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(683, 63);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Eliga un  Grupo para Iniciar";
-            // 
-            // PanelBienvenida
-            // 
-            this.PanelBienvenida.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PanelBienvenida.Controls.Add(this.label1);
-            this.PanelBienvenida.Location = new System.Drawing.Point(933, 193);
-            this.PanelBienvenida.Name = "PanelBienvenida";
-            this.PanelBienvenida.Size = new System.Drawing.Size(288, 165);
-            this.PanelBienvenida.TabIndex = 4;
->>>>>>> 627d54bc6221b37de68b04801e7d52aac2c0e7fb
             // 
             // Productos_rest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1300, 450);
             this.Controls.Add(this.Panel7);
             this.Controls.Add(this.PanelBienvenida);
-=======
-            this.ClientSize = new System.Drawing.Size(1300, 450);
-            this.Controls.Add(this.PanelBienvenida);
-            this.Controls.Add(this.PanelProductos);
->>>>>>> 627d54bc6221b37de68b04801e7d52aac2c0e7fb
             this.Controls.Add(this.panel1);
             this.Name = "Productos_rest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -379,7 +283,6 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-<<<<<<< HEAD
             this.PanelBienvenida.ResumeLayout(false);
             this.PanelBienvenida.PerformLayout();
             this.Panel7.ResumeLayout(false);
@@ -389,14 +292,6 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
-=======
-            this.PanelProductos.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.PanelBienvenida.ResumeLayout(false);
-            this.PanelBienvenida.PerformLayout();
->>>>>>> 627d54bc6221b37de68b04801e7d52aac2c0e7fb
             this.ResumeLayout(false);
 
         }
@@ -411,7 +306,6 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtBuscarSalon;
         private System.Windows.Forms.Button AgregarGrupo;
-<<<<<<< HEAD
         private System.Windows.Forms.Panel PanelBienvenida;
         private System.Windows.Forms.Label label1;
         internal System.Windows.Forms.Panel Panel7;
@@ -423,14 +317,5 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Productos
         internal System.Windows.Forms.TextBox TextBox1;
         internal System.Windows.Forms.MenuStrip MenuStrip1;
         internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-=======
-        private System.Windows.Forms.Panel PanelProductos;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button BtnAgregarProducto;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel PanelBienvenida;
->>>>>>> 627d54bc6221b37de68b04801e7d52aac2c0e7fb
     }
 }
