@@ -88,26 +88,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Modulos.Mesas_Salones
 
         private void button3_Click(object sender, EventArgs e)
         {
-
-            for (int i = 0; i < 80; i++)
-            {
-                try
-                {
-                    Conexion.CONEXIONMAESTRA.abrir();
-                    SqlCommand cmd = new SqlCommand("insertar_salon", Conexion.CONEXIONMAESTRA.conectar);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Salon", "NULLO" + i);
-                    cmd.Parameters.AddWithValue("@Id_salon", idSalon);
-                    cmd.ExecuteNonQuery();
-                    Conexion.CONEXIONMAESTRA.cerrar();
-                }
-                catch (Exception ex)
-                {
-                    Conexion.CONEXIONMAESTRA.cerrar();
-                    MessageBox.Show(ex.StackTrace);
-                }
-            }
-            //Close();
+            this.Dispose();
         }
     }
 }

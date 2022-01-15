@@ -13,7 +13,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Productos.Productos_rest());
+            Application.Run(new Modulos.Punto_de_Venta.Punto_de_Venta());
         }
     }
 }
