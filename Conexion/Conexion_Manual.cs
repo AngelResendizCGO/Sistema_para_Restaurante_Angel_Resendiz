@@ -40,7 +40,7 @@ namespace Sistema_para_Restaurante_Angel_Resendiz.Conexion
             }
             catch (System.Security.Cryptography.CryptographicException ex)
             {
-
+                MessageBox.Show("Sin Conexion ", "Conexion Fallida", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
